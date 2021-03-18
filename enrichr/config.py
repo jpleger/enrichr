@@ -143,15 +143,3 @@ class ConfigOption:
         obj._config_values[self.attr_name] = value
         
 
-config = Configuration()
-
-# Define our global application debug/loglevel attributes 
-Configuration.DEBUG = ConfigOption(name='debug', namespace='enrichr', default=False, help_text='Enable Debug Mode')
-Configuration.LOGLEVEL = ConfigOption(name='loglevel', namespace='enrichr', default='CRITICAL', help_text='Log Level for Python Logging (defaults to Critical)')
-Configuration.FORCE_PLUGIN_REGISTRATION = ConfigOption(
-    name='force_plugin_registration',
-    namespace='enrichr',
-    default=False,
-    help_text='Force Registration of Plugins (ignore namespace collisions)'
-)
-
