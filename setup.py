@@ -8,17 +8,23 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="enrichr",
     version="0.0.1",
-    author="Enrichr Project",
-    author_email="contact@enrichr.io",
+    author="James Pleger",
+    author_email="jpleger@gmail.com",
     description="Security Enrichment Framework",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/enrichr-io/enrichr",
+    url="https://github.com/jpleger/enrichr",
     packages=setuptools.find_packages(),
     extra_require={
         'cli': ['enrichr-cli'],
-        'free': ['enrichr-extract-text'],
+        'free': [
+            'enrichr-cli',
+            'enrichr-extract-text',
+        ],
     },
+    zip_safe=False,
+    package_dir={"": "src"},
+    include_package_data=True,
     install_requires = [
         "requests>=2.25.1",
     ],
