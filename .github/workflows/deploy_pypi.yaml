@@ -1,4 +1,4 @@
-name: Upload yanl2resume to PyPI
+name: Upload enrichr to PyPI
 on: 
   push:
     tags:
