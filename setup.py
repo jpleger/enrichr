@@ -14,7 +14,6 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/jpleger/enrichr",
-    packages=setuptools.find_packages(),
     extra_require={
         'cli': ['enrichr-cli'],
         'free': [
@@ -24,6 +23,7 @@ setuptools.setup(
     },
     zip_safe=False,
     package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
     include_package_data=True,
     install_requires = [
         "requests>=2.25.1",
