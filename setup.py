@@ -24,7 +24,6 @@ setuptools.setup(
     zip_safe=False,
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    include_package_data=True,
     install_requires = [
         "requests>=2.25.1",
     ],
