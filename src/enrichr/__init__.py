@@ -6,7 +6,7 @@ from enrichr.config import Configuration, ConfigOption
 from enrichr.dispatch import Dispatcher
 
 
-__VERSION__ = '0.0.4'
+__VERSION__ = '0.0.5'
 
 # Setup our global objects
 dispatcher = Dispatcher()
